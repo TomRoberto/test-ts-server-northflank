@@ -1,0 +1,5 @@
+{
+  "watch": ["src"],
+  "ext": "ts,json",
+  "exec": "npx tsc --noEmit && npx tsx src/index.ts"
+}
