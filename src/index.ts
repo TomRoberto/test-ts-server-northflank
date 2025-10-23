@@ -8,9 +8,7 @@ import saveUser from "./utils/saveUser";
 const app = express(); // création du serveur
 app.use(express.json());
 
-console.log(process.env.MONGODB_URI);
-
-mongoose.connect(process.env.MONGO_URI as string);
+mongoose.connect(process.env.MONGODB_URI as string);
 
 app.get("/", (req, res) => {
   // route en GET dont le chemin est /
